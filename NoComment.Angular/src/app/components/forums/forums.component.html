@@ -1,0 +1,43 @@
+<div *ngIf="forumDisplays">
+  <div *ngIf="!forum">
+    <h1>Incidents</h1>
+    <hr/>
+    <div *ngFor="let forumDisplay of forumDisplays" class="">
+      <div *ngIf="forumDisplay.newDay == true">
+        <h2>
+            {{ forumDisplay.creationDate | momentDate: 'MM/DD/YY' }}
+        </h2>
+      </div>
+
+      <div *ngIf="forumDisplay.subject != ''">
+        <div (click)="getIncident(forumDisplay.rootEmailId)">
+          <div class="card forum-link">
+            <div class="card-body">
+                {{ forumDisplay.subject }} <span class="badge badge-primary badge-pill pl-2">{{forumDisplay.emailCount}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+    </div>
+  </div>
+
+  <div *ngIf="forum">
+    <a href="Javascript:void(0);" (click)="returnToList()">
+      &larr; back
+    </a>
+    <br/>
+    <h2>
+      {{forum.subject}}
+    </h2>
+    <div *ngFor="let email of forum.emails">
+      <div class="card mb-4 px-3">
+        <div class="card-block">
+          <h4 class="card-title">{{email.authorName}} ({{email.authorEmail}})</h4>
+          <h6 class="card-subtitle mb-2 text-muted">{{ email.date | momentDate: 'HH:mm A on MM/DD/YY' }}</h6>
+          <p class="card-text line-breaker">{{ removePreviousEmails(email.content) }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
