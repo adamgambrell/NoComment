@@ -14,9 +14,9 @@ namespace NoComment.Web.Controllers
         }
 
         [HttpGet]
-        public async Task<string> ResetEmailsAsync()
+        public string ResetEmailsAsync()
         {
-            await _inboxService.MarkAllEmailsAsUnseenAsync();
+            // await _inboxService.MarkAllEmailsAsUnseenAsync();
             return "value";
         }
     }

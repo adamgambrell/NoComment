@@ -7,8 +7,8 @@ namespace NoComment.Domain.Contracts
 {
     public interface IForumService
     {
-        Task<IEnumerable<Forum>> GetForumListAsync();
-        Task<IEnumerable<ForumDisplayDto>> GetForumDtoListAsync();
-            Task<ForumDto> GetForumByIdAsync(string rootEmailId);
+        // Task<IEnumerable<Forum>> GetForumListAsync();
+        // Task<IEnumerable<ForumDisplayDto>> GetForumDtoListAsync();
+        // Task<ForumDto> GetForumByIdAsync(string rootEmailId);
     }
 }

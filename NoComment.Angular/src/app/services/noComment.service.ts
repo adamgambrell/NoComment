@@ -11,20 +11,20 @@ import { ForumDto } from '../models/forum-dto.model';
 export class NoCommentService {
 	constructor(private http: HttpService) { }
 
-	public resetData() {
-		let url = `/api/inbox`;
-		return this.http.get(url).map(res => res.text());
-	}
+	// public resetData() {
+	// 	let url = `/api/inbox`;
+	// 	return this.http.get(url).map(res => res.text());
+	// }
 
-	public getForumDtos() {
-		let url = `/api/forum`;
-		let face = this.http.get(url).map(res => <ForumDto[]>res.json());
-		return face;
-	}
+	// public getForumDtos() {
+	// 	let url = `/api/forum`;
+	// 	let face = this.http.get(url).map(res => <ForumDto[]>res.json());
+	// 	return face;
+	// }
 
-	public getForumById(id: string) {
-		let url = `/api/forum/${id}`;
-		let face = this.http.get(url).map(res => <Forum>res.json());
-		return face;
-	}
+	// public getForumById(id: string) {
+	// 	let url = `/api/forum/${id}`;
+	// 	let face = this.http.get(url).map(res => <Forum>res.json());
+	// 	return face;
+	// }
 }

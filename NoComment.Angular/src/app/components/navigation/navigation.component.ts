@@ -22,11 +22,11 @@ export class NavigationComponent implements OnInit , OnDestroy {
   }
 
   submit() { 
-    this.NoCommentService.resetData().subscribe(x => {
-      let reset = x.length;
-    }, (err) => {
-      console.log(err);
-    });
+    // this.NoCommentService.resetData().subscribe(x => {
+    //   let reset = x.length;
+    // }, (err) => {
+    //   console.log(err);
+    // });
   }
     
   ngOnDestroy(): void {

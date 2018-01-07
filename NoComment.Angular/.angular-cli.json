@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "../NoComment.web/wwwroot",
+      "outDir": "../NoComment.Web/wwwroot",
       "assets": [
         "assets",
         "favicon.ico"

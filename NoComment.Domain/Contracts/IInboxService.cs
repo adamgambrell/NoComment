@@ -6,7 +6,7 @@ namespace NoComment.Domain.Contracts
 {
     public interface IInboxService
     {
-        Task<IEnumerable<Email>> GetUnreadEmailsAsync();
-        Task MarkAllEmailsAsUnseenAsync();
+        // Task<IEnumerable<Email>> GetUnreadEmailsAsync();
+        // Task MarkAllEmailsAsUnseenAsync();
     }
 }

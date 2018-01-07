@@ -17,17 +17,23 @@ namespace NoComment.Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<ForumDisplayDto>> GetForumDtoListAsync()
+        public string GetForumDtoListAsync()
         {
-            var face = await _forumService.GetForumDtoListAsync();
-            return face;
+            return "face";
         }
 
-        [Route("api/Forum/{rootEmailId}")]
-        [HttpGet("{rootEmailId}", Name = "GetByIdRoute")]
-        public async Task<ForumDto> GetFromFromId(string rootEmailId)
-        {
-            return await _forumService.GetForumByIdAsync(rootEmailId);
-        }
+        // [HttpGet]
+        // public async Task<IEnumerable<ForumDisplayDto>> GetForumDtoListAsync()
+        // {
+        //     var face = await _forumService.GetForumDtoListAsync();
+        //     return face;
+        // }
+
+        // [Route("api/Forum/{rootEmailId}")]
+        // [HttpGet("{rootEmailId}", Name = "GetByIdRoute")]
+        // public async Task<ForumDto> GetFromFromId(string rootEmailId)
+        // {
+        //     return await _forumService.GetForumByIdAsync(rootEmailId);
+        // }
     }
 }

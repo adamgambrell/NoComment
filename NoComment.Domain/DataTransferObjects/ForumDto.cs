@@ -6,6 +6,6 @@ namespace NoComment.Domain.Dtos
 {
     public class ForumDto : ForumDisplayDto
     {
-        public IEnumerable<EmailDto> Emails { get; set; }
+        // public IEnumerable<EmailDto> Emails { get; set; }
     }
 }

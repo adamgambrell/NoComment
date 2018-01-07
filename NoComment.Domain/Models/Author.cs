@@ -8,7 +8,11 @@ namespace NoComment.Domain.Models
         [Key]
         public string AuthorId { get; set; }
         public string Password { get; set; }
+        public string AuthorEmail { get; set; }
         public string Username { get; set; }
-        public virtual ICollection<NoComment> NoComments { get; set; }
+        public string AuthurName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public virtual ICollection<NoComment> NoCommentIds { get; set; }
     }
 }

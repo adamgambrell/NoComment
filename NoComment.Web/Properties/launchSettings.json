@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "NoComment.web": {
+    "NoComment.Web": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

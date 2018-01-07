@@ -12,9 +12,9 @@ namespace NoComment.Domain.Models
         public string Username { get; set; }
         public virtual ICollection<NoComment> NoComments { get; set; }
 
-        public DateTime CreationDate { get; set; }
-        public virtual ICollection<Email> Emails { get; set; }
-        public string RootEmailId { get; set; }
-        public string Subject { get; set; }
+        // public DateTime CreationDate { get; set; }
+        // public virtual ICollection<Email> Emails { get; set; }
+        // public string RootEmailId { get; set; }
+        // public string Subject { get; set; }
     }
 }
