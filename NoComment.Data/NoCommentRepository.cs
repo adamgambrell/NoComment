@@ -16,6 +16,7 @@ namespace NoComment.Data
             _context = context;
         }
 
+        // public async Task<
         // public async Task<bool> EmailIsNew(string messageId)
         // {
         //     return await _context.Emails.FindAsync(messageId).ConfigureAwait(false) == null ? true : false;
